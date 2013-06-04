@@ -1,0 +1,44 @@
+<style>
+    #staffstar .col{
+     float:left;
+	 width:400px;
+	 margin:30px;
+    }
+	
+	#staffstar .col p{
+		padding:20px;
+	}
+	
+
+	
+	#staffstar h3{
+		font-size:1.5em;
+	}
+	
+
+	#staffstar .col img{
+		width:300px;
+		height:300px;
+		margin:30px auto;
+		border:2px solid orange;
+		display:block;
+	}
+</style>
+<div id="staffstar">
+    <{foreach from=$people item=p}>
+
+    <div class="col">
+       <h3><{$p.pic_title}></h3>
+	               <img  src="<{$xoops_url}>/uploads/staffstar/<{$p.pic_link}>" />
+
+	        <p>
+                <{$p.pic_content}>
+            </p>
+       
+        </div>
+        <{if $p.count mod 2==1}>
+		   <div class="clear"></div>
+		  
+		<{/if}>
+		<{/foreach}>
+    </div>

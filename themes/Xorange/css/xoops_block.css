@@ -1,0 +1,84 @@
+@CHARSET "UTF-8";
+
+/* --------- Block main menu --------- */
+#mainmenu {
+    font-size: .9em;
+}
+
+#mainmenu a {
+    display: block;
+    margin-left: 4px;
+    background: url("../icons/list-off-orange.gif") no-repeat left;
+    padding: 2px 4px 4px 0;
+}
+
+#mainmenu a:hover {
+    background: url("../icons/list-on-orange.gif") no-repeat left;
+}
+
+#mainmenu a.menuTop {
+    padding-left: 12px;
+}
+
+#mainmenu a.menuMain {
+    padding-left: 12px;
+}
+
+#mainmenu a.menuSub {
+    background: none;
+    padding-left: 12px;
+    font-size: .9em;
+    font-style: italic;
+}
+
+#mainmenu a.menuSub:hover {
+}
+
+/* --------- Block user menu --------- */
+#usermenu {
+    font-size: .9em;
+}
+
+#usermenu a {
+    display: block;
+    margin-left: 4px;
+    background: url("../icons/list-off-orange.gif") no-repeat left;
+    padding: 1px 4px 2px 12px;
+}
+
+#usermenu a:hover {
+    background: url("../icons/list-on-orange.gif") no-repeat left;
+}
+
+#usermenu a.menuTop {
+}
+
+#usermenu a.highlight {
+    background-color: #fcc;
+}
+
+/* --------- Lists --------- This is defined by xoops itself , i dont't know what it is used for */
+#xo-canvas-content ul {
+    margin: 2px;
+    padding: 2px;
+    list-style: decimal inside;
+    text-align: left;
+}
+
+#xo-canvas-content li {
+    margin-left: 2px;
+    background-color: inherit;
+    color: #639ACE;
+    line-height: 1.4em;
+    list-style: disc inside;
+}
+
+#login_form {
+	font-size:1.4em;
+	
+}
+
+#login_form input{
+	display:block;
+	margin-top:5px;
+}

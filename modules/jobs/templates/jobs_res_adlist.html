@@ -1,0 +1,29 @@
+<table cellspacing="1" class="outer" style="width:100%;">
+  <tr>
+    <td align="center"><{$last_res_head}></td>
+  </tr>
+  <tr>
+    <td style="padding:0;">
+   	  <table border="0" cellpadding="0" cellspacing="0" style="width:100%;">
+        <tr>
+		  <{if $xoops_isadmin}><td class="head"></td><{/if}>
+          <td align="center" class="head"><{$last_res_head_title}></td>
+          <td align="center" class="head"><{$last_res_head_experience}></td>
+          <td align="center" class="head"><{$last_res_head_cat}></td>
+          <td align="center" class="head"><{$last_res_head_local}></td>
+          <td align="center" class="head"><{$last_res_head_views}></td>
+        </tr>
+        <{foreach item=item from=$items}>
+		<tr class="<{cycle values="odd,even"}>">
+		  <{if $xoops_isadmin}><td><{$item.admin}></td><{/if}>
+          <td align="center"><b><{$item.title}></b></td>
+	  <td align="center"><{$item.exp}></td>
+          <td align="center"><{$item.cat}></td>
+          <td align="center"><{$item.local}></td>
+	  <td align="center"><{$item.views}></td>
+        </tr>
+		<{/foreach}>
+      </table>
+	</td>
+  </tr>
+</table>

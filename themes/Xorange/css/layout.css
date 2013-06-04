@@ -1,0 +1,236 @@
+@CHARSET "UTF-8";
+
+#xo-canvas {
+    margin: 0 auto; /*这在ie6下是有用的*/
+    width: 1000px;
+}
+
+/* --------- Header --------- */
+#xo-header {
+    height: 160px;
+    /* background: #fff url(../img/banner.jpg) no-repeat;*/
+}
+
+/* Logo */
+#xo-header h1 { /*看不见的*/
+    text-indent: -1000px;
+    display: none;
+}
+
+/* Navigation menu */
+#xo-globalnav ul {
+    background: #885835 url(../img/navigation_bg.png) repeat-x;
+	padding-left:50px;
+    height: 35px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+    behavior: url(/include/me/piecss/PIE.php); /*ie5+专有*/
+}
+
+#xo-globalnav li {
+    list-style: none;
+    float: left;
+}
+
+#xo-globalnav li a, #xo-globalnav li a:visited {
+    font-weight: bold;
+    text-align: center;
+    color: #fff;
+    font-size: 1.1em;
+    display: block;
+    height: 35px;
+    line-height: 35px;
+    width: 85px;
+    margin: 0px 5px 0px 5px;
+}
+
+#xo-globalnav li a:hover {
+    color: #000;
+    text-decoration: none;
+    background-color: #ffff55;
+}
+
+#xo-globalnav a.hot_nav {
+    background: url("../img/hot.gif") right top no-repeat;
+}
+
+/* --------- Breadcrumbs --------- */
+#xo-breadcrumbs {
+    margin: 0 5px 0 5px;
+    padding: 0 3px 6px 5px;
+    font-size: .9em;
+}
+
+.xo-block {
+    margin: 7px 5px 7px 5px;
+}
+
+.xo-blockcontent {
+    border: 2px solid orange;
+    border-top-width: 0px;
+    -moz-border-radius: 0px 0px 10px 10px;
+    -webkit-border-radius:  0px 0px 10px 10px;
+    border-radius:  0px 0px 10px 10px;
+}
+
+.xo-blocktitle {
+    height: 35px;
+    background: url("../img/content_bar.jpg") repeat-y;
+    -moz-border-radius: 10px 10px 0 0;
+    -webkit-border-radius: 10px 10px 0 0;
+    border-radius: 10px 10px 0 0;
+    behavior: url(/include/me/piecss/PIE.php);
+}
+
+.xo-blocktitle h3 {
+    line-height: 35px; /*为了居中显示*/
+    color: #ffffff;
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+    font-size: 1.3em;
+    text-shadow: 5px 2px 5px black;
+    text-indent: 1.6em;
+}
+
+.xo-blockcontent {
+    padding: 3px 6px 3px 6px;
+    line-height: 1.2em;
+}
+
+#xo-canvas-content {
+    border: 3px solid orange;
+    background-color: #fdecc7;
+    margin-top: 7px;
+}
+
+/* --------- Left columns --------- */
+#xo-canvas-leftcolumn {
+    width: 270px;
+    float: left;
+}
+
+/* --------- Right columns --------- */
+#xo-canvas-rightcolumn { /*不可见*/
+    width: 185px;
+    padding-top: 3px;
+    padding-left: 5px;
+    border-left: 1px dashed #dda875;
+    float: left;
+    display: none;
+}
+
+/* --------- Center blocks --------- */
+#xo-page {
+    overflow: hidden;
+	float:left;
+	width:100%;
+}
+
+#xo-topleftblocks, #xo-bottomleftblocks, #xo-toprightblocks, #xo-bottomrightblocks { /*不可见*/
+    width: 49.5%;
+    display: none;
+}
+
+/* --------- Content module page --------- */
+#xo-content {
+    padding: 8px;
+    text-align: justify;
+}
+
+/* --------- Footer --------- */
+#xo-footer {
+    clear: both;
+    height: 80px;
+    margin-top: 10px;
+    background: #f17327;
+    padding: 0.6em 0 0 0.5em;
+    color: yellow;
+    text-align: center;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+    behavior: url(/include/me/piecss/PIE.php);
+}
+
+#xo-footer a:hover {
+    color: #000;
+}
+
+#footer_logos {
+    width: 500px;
+    padding-bottom: 8px;
+    margin: 0 auto;
+}
+
+#footer_logos div.footer_logo {
+    float: left;
+    padding-left: 10px;
+}
+
+#footer_logos a {
+    text-indent: -1000px;
+}
+
+#footer_logos a {
+    display: block;
+    overflow: hidden;
+    height: 26px;
+}
+
+#footer_logo_1 a {
+    width: 157px;
+    background: url("../img/footer_js_nybank.gif") no-repeat;
+}
+
+#footer_logo_2 a {
+    width: 100px;
+    background: url("../img/footer_sh_rencai.jpg") no-repeat;
+}
+
+#footer_logo_3 a {
+    width: 85px;
+    background: url("../img/footer_yhkz.jpg") no-repeat;
+}
+
+#footer_logo_4 a {
+    width: 105px;
+    background: url("../img/footer_zgnyyh.jpg") no-repeat;
+}
+
+#xo-logger-output {
+    font-size: .9em;
+}
+
+/* --------- Redirect page (system_redirect.html) --------- */
+#xo-redirect {
+    margin: 10px 80px 10px 80px;
+    background-color: inherit;
+    padding: 8px;
+    line-height: 1.4em;
+    text-align: center;
+    border: 1px dashed #dda875;
+}
+
+/* --------- Site closed page (system_siteclosed.html) --------- */
+#xo-siteclosed {
+    margin: 20px 200px 10px 200px;
+    padding: 8px;
+    line-height: 1.6em;
+    text-align: center;
+    border: 1px dashed #dda875;
+}
+
+#xo-siteclosed strong {
+    display: block;
+    font-style: normal;
+}
+
+#xo-siteclosed label {
+    font-size: .9em;
+    font-weight: normal;
+}
+
+#xo-siteclosed input {
+    margin: 2px;
+}

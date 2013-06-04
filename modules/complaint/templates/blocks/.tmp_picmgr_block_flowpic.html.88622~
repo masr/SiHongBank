@@ -1,0 +1,114 @@
+<style>
+    #imageFlow {
+        position: absolute;
+        width: 800px;;
+        height: 380px;
+        left: 200px;
+        top: 230px;
+        background-color: #fff;
+    }
+    
+    #imageFlow .diapo {
+        position: absolute;
+        left: -1000px;
+        cursor: pointer;
+        -ms-interpolation-mode: nearest-neighbor;
+    }
+    
+    #imageFlow .link {
+        border: dotted #fff 1px;
+        margin-left: -1px;
+        margin-bottom: -1px;
+    }
+    
+    #imageFlow .bank {
+        visibility: hidden;
+    }
+    
+    #imageFlow .top {
+        position: absolute;
+        width: 100%;
+        height: 40%;
+        background: #ddd;
+    }
+    
+    #imageFlow .text {
+        position: absolute;
+        width: 30%;
+        top: 75%;
+        left: 35%;
+        text-align: center;
+        color: #fff;
+        font-family: verdana, arial, Helvetica, sans-serif;
+        z-index: 1000;
+        background-color: #bbb;
+        height: 15%;
+    }
+    
+    #imageFlow .title {
+        font-size: 1.2em;
+        font-weight: bold;
+        height: 20px;
+    }
+    
+    #imageFlow .legend {
+        font-size: 0.8em;
+        height: 12px;
+    }
+    
+    #imageFlow .scrollbar {
+        position: absolute;
+        left: 10%;
+        bottom: 5%;
+        width: 80%;
+        height: 16px;
+        z-index: 1000;
+    }
+    
+    #imageFlow .track {
+        position: absolute;
+        left: 1%;
+        width: 98%;
+        height: 16px;
+        filter: alpha(opacity = 30);
+        opacity: 0.3;
+    }
+    
+    #imageFlow .arrow-left {
+        position: absolute;
+    }
+    
+    #imageFlow .arrow-right {
+        position: absolute;
+        right: 0px;
+    }
+    
+    #imageFlow .bar {
+        position: absolute;
+        height: 16px;
+        left: 25px;
+    }
+</style>
+<div id="imageFlow">
+    <div class="top">
+    </div>
+    <div class="bank">
+        <{foreach from=$block.flow_pics item=flow}>
+		<a rel="<{$xoops_url}>/uploads/flow/<{$flow.pic_file_name}>" title="<{$flow.pic_title}>" href="<{$flow.pic_linking}>">
+			<{$flow.pic_content}></a>
+			<{/foreach}>
+    </div>
+    <div class="text">
+        <div class="title">
+        </div>
+        <div class="legend">
+        </div>
+    </div>
+    <div class="scrollbar">
+        <img class="track" src="<{$xoops_imageurl}>img/sb.gif" alt="">
+		<img class="arrow-left" src="<{$xoops_imageurl}>img/sl.gif" alt="">
+		<img class="arrow-right" src="<{$xoops_imageurl}>img/sr.gif" alt="">
+		<img class="bar" src="<{$xoops_imageurl}>img/sc.gif" alt="">
+    </div>
+</div>
+<script src="<{$xoops_url/include/me/flow.js}>"></script>

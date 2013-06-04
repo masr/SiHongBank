@@ -1,0 +1,10 @@
+      <div id="xo-breadcrumbs">
+  		    您的位置 ： <a href="<{$xoops_url}>/">主页</a>
+		    <{foreach from=$xoops_breadcrumbs item="item"}> >			      
+			  <{if $item.url}>
+			    <a href="<{$item.url}>"><{$item.name}></a>
+			  <{else}>
+			    <{$item.name}>
+			  <{/if}>
+		    <{/foreach}>
+      </div>

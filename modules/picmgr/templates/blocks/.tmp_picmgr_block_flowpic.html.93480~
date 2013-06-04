@@ -1,0 +1,32 @@
+
+<div id="imageFlowFlag"></div>
+<div id="imageFlow">
+    <div class="top">
+    </div>
+    <div class="bank">
+        <{foreach from=$block.flow_pics item=flow}>
+		<a rel="<{$xoops_url}>/uploads/flow/<{$flow.pic_file_name}>" title="<{$flow.pic_title}>" href="<{$flow.pic_linking}>">
+			<{$flow.pic_content}></a>
+			<{/foreach}>
+    </div>
+    <div class="text">
+        <div class="title">
+        </div>
+        <div class="legend">
+        </div>
+    </div>
+    <div class="scrollbar">
+        <img class="track" src="<{$xoops_imageurl}>img/sb.gif" alt="">
+		<img class="arrow-left" src="<{$xoops_imageurl}>img/sl.gif" alt="">
+		<img class="arrow-right" src="<{$xoops_imageurl}>img/sr.gif" alt="">
+		<img class="bar" src="<{$xoops_imageurl}>img/sc.gif" alt="">
+    </div>
+</div>
+<script src="<{$xoops_url}>/include/me/flow.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+	$(function(){
+		$("#imageFlow").appendTo("body");
+		$("#imageFlowFlag").parents(".xo-block").hide();
+	})
+</script>

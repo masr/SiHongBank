@@ -1,0 +1,15 @@
+<link rel="stylesheet" href="<{$xoops_imageurl}>css/index.css" />
+<script type="text/javascript" src="<{$xoops_url}>/include/me/wall_images.js">
+</script>
+<script type="text/javascript" src="<{$xoops_url}>/include/me/finance.js">
+</script>
+<script type="text/javascript" src="<{$xoops_url}>/include/me/swfobject/src/swfobject.js">
+</script>
+<script type="text/javascript">
+    $(function(){
+        $("#welcome_flash").parents(".xo-block").html($("#welcome_flash").html()).removeClass(".xo-block");
+        swfobject.embedSWF("http://www.tudou.com/v/DNqQtpjrvEU/&uid=59632222/v.swf", "ycwy_video", "240", "192", "9.0.0", "");
+        swfobject.embedSWF("http://www.tudou.com/v/iwkeMAPXmaM/&uid=59632222/v.swf", "sjzf_video", "240", "192", "9.0.0", "");
+        
+    })
+</script>

@@ -1,0 +1,28 @@
+<form name="formStep1" method="get" action="step2.php">
+<table width="500" border="0" align="center" cellpadding="5" cellspacing="0">
+  <caption>
+    第一步 设置目录
+    <div class="error"><?php echo $message; ?></div>
+  </caption>  
+  <tr>
+    <td>&nbsp;</td>
+    <td>来源</td>
+    <td>目标</td>
+  </tr>
+  <tr>
+    <td>模块目录</td>
+    <td>
+      <label>
+        <input name="sourceDir" type="text" size="16" maxlength="32">
+        </label>    </td>
+    <td><input name="targetDir" type="text" size="16" maxlength="32"></td>
+  </tr>
+  <tr>
+    <td colspan="3">
+      <div align="center">
+				<input name="next" type="submit" id="next" value="下一步">
+      </div>
+		</td>
+    </tr>
+</table>
+</form>

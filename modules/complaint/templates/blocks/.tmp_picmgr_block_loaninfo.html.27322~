@@ -1,0 +1,34 @@
+<div id="finance_block">
+                <style>                
+                     <{foreach from =$block.loaninfo item=loan}>
+                      #finance_link_id_<{$loan.id}>{background-image:url(<{$xoops_url}>/uploads/loan/<{$loan.pic_file_name}>);}
+                     <{/foreach}>
+                                        					
+                                    
+                </style>
+			
+                <div id="finance_links">
+        
+					<{foreach  from=$block.loaninfo item=loan}>
+					<{if $loan.id mod 5==0}>
+					<div class="finance_line">
+					<{/if}>
+						<a class="finance_link" href="<{$loan.pic_linking}>" id="finance_link_id_<{$loan.id}>"><{$loan.pic_title}></a>
+	     				<{if $loan.id mod 5==4 || $loan.id==($block.loaninfo|@count)-1 }>
+					<div class="clear"></div></div>
+					<{/if }>
+					<{/foreach}>
+                </div>
+                <div id="finance_intros">
+                	<div id="finance_intros_wrap">
+                    <{foreach from=$block.loaninfo item=loan}>
+					<div class="finance_intro" id="finance_intro_id_<{$loan.id}>">
+						<h3><{$loan.pic_title}></h3>
+						<p><{$loan.pic_content}></p>
+					</div>
+					<{/foreach}>
+					</div>
+                </div>
+                <div class="clear">
+                </div>
+            </div>

@@ -1,0 +1,17 @@
+<div id="slide_pics_manage">
+<div class="slide_pic">
+	<div class="slide_pic_img">
+		<img src="#"  alt="daida" />
+	</div>
+	<div class="slide_pic_text">
+		<input value="吐啊" name="title" />
+		<textarea rows="8" cols="20" name="content" value="大叔控"></textarea>
+	</div>
+</div>
+</div>
+
+<form action="" method="" accept-charset="utf-8">
+	<input type='text' name='file_path_text' />
+	<input type="submit" value="提交"  name='file_path_submit'/>
+	<input type='hidden' name=>
+</form>

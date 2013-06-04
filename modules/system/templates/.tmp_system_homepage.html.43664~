@@ -1,0 +1,8 @@
+<link rel="stylesheet" href="<{$xoops_imageurl}>css/index.css" />
+<script type="text/javascript" src="<{$xoops_url}>/include/me/slidetrans.js">
+</script>
+<script type="text/javascript" src="<{$xoops_url}>/include/me/wall_images.js">
+</script>
+<script type="text/javascript" src="<{$xoops_url}>/include/me/finance.js">
+</script>
+

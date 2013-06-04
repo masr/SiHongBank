@@ -1,0 +1,159 @@
+<link rel="stylesheet" href="<{$xoops_imageurl}>css/index.css" />
+<script type="text/javascript" src="<{$xoops_url}>/include/slidetrans.js">
+</script>
+<script type="text/javascript" src="<{$xoops_url}>/include/wall_images.js">
+</script>
+<script type="text/javascript" src="<{$xoops_url}>/include/finance.js"></script>
+<div id="xo-index-leftcolumn"> 
+    <div class="xo-block ">
+        <h3 class="xo-blocktitle">网站公告</h3>
+        <div class="xo-blockcontent">
+            今年以来，泗洪农村合作银行采取向单位发函、上门授信、在授信范围内直接发放较大金额信用贷款的做法，积极开拓公务员市场。
+            4月28日，经泗洪县局多方协调，泗洪县农村信用合作银行全面完成城乡金融营业网点“两个延伸”及远程监控图像联网任务，全县农村信用合作银行技防建设工作全面达标，实现了城乡33个网点监控图像远程传输至该行监控中心，提高了安全保卫工作科技防范含量。
+        </div>
+    </div>
+	<{if $xoops_isuser}>
+<div class="xo-block system">
+		<h3 class="xo-blocktitle">会员菜单</h3>
+		<div class="xo-blockcontent"><table cellspacing="0">
+  <tbody><tr>
+    <td id="usermenu">
+              <a title="管理区" href="<{$xoops_url}>/admin.php" class="menuTop">管理区</a>
+	    <a title="查看账号" href="<{$xoops_url}>/user.php">查看账号</a>
+            <a title="编辑帐号" href="<{$xoops_url}>/edituser.php">编辑帐号</a>
+      <a title="通知" href="<{$xoops_url}>/notifications.php">通知</a>
+              <a title="收件箱" href="<{$xoops_url}>/viewpmsg.php">收件箱</a>
+            <a title="退出" href="<{$xoops_url}>/user.php?op=logout">退出</a>
+    </td>
+  </tr>
+</tbody></table>
+</div>
+</div>	
+<{else}>
+<div class="xo-block">
+		<h3 class="xo-blocktitle">会员登陆</h3>
+		<div class="xo-blockcontent"><form method="post" action="<{$xoops_url}>/user.php">
+    帐号：<br>
+    <input type="text" maxlength="25" value="" size="12" name="uname"><br>
+    密码：<br>
+    <input type="password" maxlength="32" size="12" name="pass"><br>
+        <br>
+    <input type="hidden" value="/" name="xoops_redirect">
+    <input type="hidden" value="login" name="op">
+    <input type="submit" value="会员登录"><br>
+    <a href="javascript:openWithSelfMain('https://', 'ssllogin', 300, 200);">安全模式登录</a>
+</form>
+<br>
+<a title="忘记密码?" href="<{$xoops_url}>/user.php#lost">忘记密码?</a>
+<br><br>
+<a title="现在注册!" href="<{$xoops_url}>/register.php">现在注册!</a></div>
+</div>
+
+<{/if}>
+</div>
+<div id="xo-topblocks">
+	<div id="xo-topcenterblocks">
+        <div class="xo-block ">
+            <h3 class="xo-blocktitle">新闻动态</h3>
+            <div class="xo-blockcontent">
+                <div id="slide_img">
+                    <div  id="slidecontainer1" class="slidecontainer">
+                        <ul id="idslide1" class="idslide">
+                            <li>
+                                <a href=""><img src="<{$xoops_url}>/images/digit_slide/2.jpg" alt="图片上传预览" /></a>
+                            </li>
+                            <li>
+                                <a href=""><img src="<{$xoops_url}>/images/digit_slide/2.jpg" alt="多级联动菜单" /></a>
+                            </li>
+                            <li>
+                                <a href=""><img src="<{$xoops_url}>/images/digit_slide/3.jpg" alt="浮动定位提示" /></a>
+                            </li>
+                            <li>
+                                <a href=""><img src="<{$xoops_url}>/images/digit_slide/4.jpg" alt="数据延迟加载" /></a>
+                            </li>
+                            <li>
+                                <a href=""><img src="<{$xoops_url}>/images/digit_slide/5.jpg" alt="简便文件上传" /></a>
+                            </li>
+                        </ul>
+                        <ul class="slidenum" id="slidenum1">
+                        </ul>
+                    </div>
+                </div>
+                <div id="latest_news">
+                    <h2><a href="#">国家将积极推动农村建设，加大扶持农业银行</a></h2>
+                    <div id="other_latest_news">
+                    <a href="#">泗洪农村合作银行采取向单位发函</a>
+                    </li>
+                    <a href="#">国家工作人员贷款实行利率优惠</a>
+                    <a href="#">运行中心根据授信额度</a>
+                    <a href="#">超过授信额度的贷款按个体贷款方式及利率执行</a>
+                </div>
+            </div>
+             <div class="clear">
+            </div>
+        </div>
+    </div>
+    <div class="xo-block ">
+        <h3 class="xo-blocktitle">企业风采</h3>
+        <div class="xo-blockcontent">
+            <div id="wall_images">
+                <div id="wall_images_wrap">
+                    <div id="wall_images1">
+                        <img src="<{$xoops_url}>/images/marquee/1.jpg"/><img src="<{$xoops_url}>/images/marquee/2.jpg"/><img src="<{$xoops_url}>/images/marquee/3.jpg"/><img src="<{$xoops_url}>/images/marquee/4.jpg"/><img src="<{$xoops_url}>/images/marquee/5.jpg"/><img src="<{$xoops_url}>/images/marquee/6.jpg"/><img src="<{$xoops_url}>/images/marquee/7.jpg"/>
+                    </div>
+                    <div id="wall_images2">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+	<div class="xo-block">
+		<h3 class="xo-blocktitle">最新文章</h3>
+		<div class="xo-blockcontent">
+			<{$xoops_lblocks[14].content}>
+		</div>
+	</div>
+    <div class="xo-block ">
+        <h3 class="xo-blocktitle">贷款业务</h3>
+        <div class="xo-blockcontent">
+            <div id="finance_block">
+                <style>                
+                     <{foreach from =$finance_info item=finance}>
+                      #finance_link_id_<{$finance.id}>{background-image:url(<{$finance.imgurl}>);}
+                     <{/foreach}>
+                                        					
+                                    
+                </style>
+			
+                <div id="finance_links">
+        
+					<{foreach name=d from=$finance_info item=finance}>
+					<{if $finance.id mod 4==0}>
+					<div class="finance_line">
+					<{/if}>
+						<a class="finance_link" href="<{$finance.link}>" id="finance_link_id_<{$finance.id}>"><{$finance.name}></a>
+	     				<{if $finance.id mod 4==3 || $finance.id==($finance_info|@count)-1 }>
+					<div class="clear"></div></div>
+					<{/if }>
+					<{/foreach}>
+                </div>
+                <div id="finance_intros">
+                	<div id="finance_intros_wrap">
+                    <{foreach from=$finance_info item=finance}>
+					<div class="finance_intro" id="finance_intro_id_<{$finance.id}>">
+						<h3><{$finance.title}></h3>
+						<p><{$finance.text}></p>
+					</div>
+					<{/foreach}>
+					</div>
+                </div>
+                <div class="clear">
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+<div class="clear">
+</div>
+<!-- End center top blocks loop -->

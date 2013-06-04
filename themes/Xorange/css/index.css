@@ -1,0 +1,261 @@
+@CHARSET "UTF-8";
+#xo-canvas {
+    position: relative;
+}
+
+#xo-canvas-content {
+    margin-top: 365px; /*给header和浮动图片留空*/
+    border: none;
+    background-color: transparent;
+}
+
+
+#xo-page{
+	width:730px;
+}
+
+
+#xo-breadcrumbs {
+    display: none;
+}
+
+#xo-content {
+    padding: 0;
+    margin: 0;
+    height: 0;
+}
+
+#xo-canvas-leftcolumn .xo-blockcontent {
+    padding: 3px 6px 3px 6px;
+    line-height: 1.2em;
+}
+
+#xo-canvas-leftcolumn .xo-blockcontent {
+    background: #eee;
+    padding: 3px 6px 3px 6px;
+}
+
+.xo-blockcontent {
+    background: #eee;
+}
+
+#slide_img {
+    width: 420px;
+    float: left;
+    height: 380px;
+}
+
+#latest_news {
+    float: left;
+    width: 230px;
+    padding-left: 20px;
+    padding-right: 14px;
+}
+
+#latest_news h4 a {
+    display: block;
+    padding-top: 1.5em;
+    color: red;
+    font-size: 1.3em;
+    font-weight: bold;
+    margin-bottom: 1.2em;
+    line-height: 1.3em;
+}
+
+#latest_news_list a {
+    background: url(../img/dot_yellow.png) 0 0.5em no-repeat;
+    display: block;
+    font-size: 1.1em;
+    font-weight: bold;
+    padding-bottom: 0.4em;
+    padding-left: 1em;
+}
+
+#wall_images {
+    overflow: hidden;
+    height: 150px;
+    width: 690px;
+}
+
+#wall_images1, #wall_images2 {
+    display: inline;
+}
+
+#wall_images img {
+    margin: 0 5px 0 5px;
+    height: 150px;
+}
+
+#wall_images_wrap {
+    width: 8000px; /*只要够大就可以*/
+}
+
+#finance_links {
+    float: left;
+    width: 320px;
+}
+
+
+
+#finance_links a.finance_link {
+    float: left;
+    display: block;
+    width: 70px;
+    height: 70px;
+    text-indent: -1000px;
+    border: 3px solid #eee;
+
+}
+
+#finance_links  a.finance_link:hover {
+    border-color: orange;
+}
+
+#finance_intros {
+    position: relative;
+    float: left;
+    overflow: hidden;
+    width: 365px;
+    height: 410px;
+}
+
+#finance_intros_wrap {
+    position: absolute;
+}
+
+.finance_intro {
+    padding: 20px 10px 20px 10px;
+    height: 460px;
+    width: 325px;
+    overflow: hidden;
+}
+
+.finance_intro h4 {
+    font-size: 1.3em;
+    font-weight: bold;
+    margin-bottom: 0.8em;
+}
+
+.article_block {
+    max-height: 388px;
+    min-height: 100px;
+    overflow-y: scroll;
+    padding: 0 20px 10px 20px;
+}
+
+.article_block > div {
+    padding-bottom: 7px;
+    border-bottom: 1px dotted black;
+}
+
+.article_block strong {
+    font-style: normal;
+}
+
+.article_sub_title {
+    font-size: 0.8em;
+    margin-left: 30px;
+}
+
+.article_summary {
+    padding-left: 30px;
+}
+
+.article_author {
+    display: none;
+}
+
+#search_block {
+    height: 40px;
+    padding-top: 3px;
+    padding-left: 10px;
+}
+
+#search_input {
+    width: 170px;
+    height: 35px;
+    float: left;
+    outline: 2px groove gray;
+}
+
+#search_submit_img_link {
+    width: 30px;
+    height: 28px;
+    background: url(../img/search.png) no-repeat;
+    margin-left: 10px;
+    float: left;
+    margin-top: 5px;
+}
+
+#announcement p {
+    text-indent: 2em;
+    letter-spacing: 0.2em;
+    line-height: 1.3em;
+	padding:1.3em;
+}
+
+#imageFlow {
+    position: absolute;
+    width: 980px;;
+    height: 385px;
+    top: 210px;
+    background: url("../img/flow.jpg") 0% 0% no-repeat;
+}
+
+#imageFlow .diapo {
+    position: absolute;
+    left: -1000px;
+    cursor: pointer;
+    -ms-interpolation-mode: nearest-neighbor;
+}
+
+#imageFlow .outline_flow_img {
+    outline: 4px solid #cd171f;
+}
+
+#imageFlow .link {
+    border: dotted #ff0000 1px;
+    margin-left: -1px;
+    margin-bottom: -1px;
+}
+
+#imageFlow .bank {
+    visibility: hidden;
+}
+
+#imageFlow .top {
+    position: absolute;
+    width: 100%;
+    height: 40%;
+}
+
+#imageFlow .text {
+    position: absolute;
+    width: 35%;
+    top: 77%;
+    left: 32%;
+    text-align: center;
+    color: #000;
+    z-index: 1000;
+    background-color: white;
+    height: 15%;
+}
+
+#imageFlow .title {
+    font-size: 1.2em;
+    font-weight: bold;
+    height: 23px;
+}
+
+#imageFlow .legend {
+    font-size: 0.9em;
+    line-height: 1em;
+}
+
+#operation_video h4 {
+    margin: 10px 0;
+}
+
+
+
+

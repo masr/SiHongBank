@@ -1,0 +1,49 @@
+﻿ <document>
+	<!-- This document  serve the XOOPS_URL/index.php -->
+	<item>
+		<image>uploads/flash_slide/01.jpg</image>
+		<smallimage>uploads/flash_slide/01s.jpg</smallimage>
+		<video></video>
+		<captionlines>4</captionlines>
+		<headline>合行董事长王昌林</headline>
+		<caption><a href="#" target="_blank">王董多年来带领合行员工共同奋斗，鼓励创新，引领合行走在时代的前列。他以自己的行动给合行员工树立了榜样，为了合行更好的明天运筹帷幄。</a></caption>
+		<photocaption>董事长王昌林先生</photocaption>
+	</item>
+	<item>
+		<image>uploads/flash_slide/02.jpg</image>
+		<smallimage>uploads/flash_slide/02s.jpg</smallimage>
+		<video></video>
+		<captionlines>4</captionlines>
+		<headline>走访农村</headline>
+		<caption><a href="#" target="_blank">为了更好的践行“融入城乡，成就你我”的企业理念，合行领导亲自下乡考察，“服务三农求突破，银保合作谱新篇”，无时无刻不在为广大城乡居民的利益着想。</a></caption>
+		<photocaption>实地考察</photocaption>
+	</item>
+	<item>
+		<image>uploads/flash_slide/03.jpg</image>
+		<smallimage>uploads/flash_slide/03s.jpg</smallimage>
+		<video></video>
+		<captionlines>4</captionlines>
+		<headline>科学致富</headline>
+		<caption><a href="#" target="_blank">合行秉持着为广大城乡居民服务的信念，为农民提供贷款，帮助农民致富，谱写“和谐”新音。图为合行领导与当地居民一起收获果实。</a></caption>
+		<photocaption>亲自收获</photocaption>
+	</item>
+	<item>
+		<image>uploads/flash_slide/04.jpg</image>
+		<smallimage>uploads/flash_slide/04s.jpg</smallimage>
+		<video></video>
+		<captionlines>4</captionlines>
+		<headline>科技创新</headline>
+		<caption><a href="#" target="_blank">图为全省金融系统最先进的离行式24小时自助银行（银亭），合行在做好本身业务的同时，也不忘与时俱进，加强科技创新，引入高科技产品，让合行能够更好地为客户服务。</a></caption>
+		<photocaption>与时俱进</photocaption>
+	</item>
+	<item>
+		<image>uploads/flash_slide/05.jpg</image>
+		<smallimage>uploads/flash_slide/05s.jpg</smallimage>
+		<video></video>
+		<captionlines>4</captionlines>
+		<headline>重视软环境</headline>
+		<caption><a href="#" target="_blank">在如今改善硬环境成风的环境下，合行领导慧眼独具，也要不断改善企业的软环境，营造合行的企业文化氛围，尊重人才，重视人才，提高企业的凝聚力。</a></caption>
+		<photocaption>软环境治理</photocaption>
+	</item>
+</document>
+

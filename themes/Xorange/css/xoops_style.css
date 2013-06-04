@@ -1,0 +1,448 @@
+@CHARSET "UTF-8";
+
+img.center {
+    text-align:     center;
+    margin:         0 auto;
+    display:        block;
+    margin-top:     6px;
+    margin-bottom:  4px;
+}
+
+img.left {
+    text-align:     left;
+    float:          left;
+    margin:         2px 6px 2px 0;
+    clear:          left;
+}
+
+img.right {
+    float:          right;
+    text-align:     right;
+    margin:         2px 0 2px 6px;
+    clear:          right;
+}
+
+
+#xoopsHiddenText {
+    visibility:         hidden;
+    color:              #000000;
+    font-weight:        normal;
+    font-style:         normal;
+    text-decoration:    none;
+}
+
+.pagneutral {
+    font-size:          10px;
+    width:              16px;
+    height:             19px;
+    text-align:         center;
+    background-image:   url(./images/pagneutral.gif);
+}
+
+.pagact {
+    font-size:          10px;
+    width:              16px;
+    height:             19px;
+    text-align:         center;
+    background-image:   url(./images/pagact.gif);
+}
+
+.paginact {
+    font-size:          10px;
+    width:              16px;
+    height:             19px;
+    text-align:         center;
+    background-image:   url(./images/paginact.gif);
+}
+
+
+
+/* For required elements in XOOPS form, can be overwritten in theme styles */
+.xoops-form-element-caption .caption-marker {
+    display:            none;
+}
+
+.xoops-form-element-caption-required .caption-marker {
+	background-color:   inherit;
+	padding-left: 	    2px;
+	color: 			    #ff0000;
+}
+
+.xoops-form-element-help {
+	font-size:		    .9em;
+    padding-top:        5px;
+    font-weight:        normal;
+}
+
+
+/*=============== styles pour les changement de page =================*/
+#pageNav {
+	padding:							5px 0;
+	margin:							0;
+	text-align:						center;
+}
+
+
+.PagePrev {
+	font-size:						0.8em;
+	font-weight: 					bold;
+	width:							20px;
+	height: 							20px;
+	text-align: 					center;
+	background-image:				url(../icons/action/pagneutral.png);
+	background-repeat: 			no-repeat;
+}
+
+.PageNext {
+	font-size:						0.8em;
+	font-weight: 					bold;
+	width:							20px;
+	height: 							20px;
+	text-align: 					center;
+	background-image:				url(../icons/action/pagneutral.png);
+	background-repeat: 			no-repeat;
+}
+
+.PageActive {
+/*
+	position:						absolute;
+*/
+	font-size:						0.8em;
+	font-weight: 					bold;
+	width:							20px;
+	height: 							20px;
+	text-align: 					center;
+	background-image:				url(../icons/action/pagact.png);
+	background-repeat: 			no-repeat;
+}
+.PageInactive, .PageNo {
+/*
+	position:						absolute;
+*/
+	font-size:						0.8em;
+	font-weight: 					bold;
+	width:							20px;
+	height: 							20px;
+	text-align: 					center;
+	background-image:				url(../icons/action/paginact.png);
+	background-repeat: 			no-repeat;
+}
+
+
+.clearleft {
+    clear: left;
+    height: 0;
+    line-height: 0;
+    font-size: 0;
+}
+
+.clearright {
+    clear: right;
+    height: 0;
+    line-height: 0;
+    font-size: 0;
+}
+
+.block {
+    display: block;
+}
+
+.hide {
+    display: none;
+}
+
+.spacer {
+    padding: 0 0 3px 0;
+}
+
+.floatleft {
+    float: left;
+    margin-top: 1em;
+    margin-right: 1em;
+    padding-left: 4px;
+    border: 0;
+}
+
+.floatright {
+    float: right;
+    margin-bottom: 1em;
+    margin-left: 1em;
+    padding: 2px;
+    border: 0;
+}
+
+/* --------- Font class --------- */
+.extrasmall {
+    font-size: .7em;
+}
+
+.small {
+    font-size: .9em;
+}
+
+.normal {
+    font-size: 1em;
+}
+
+.big {
+    font-size: 1.2em;
+}
+
+.maxi {
+    font-size: 1.5em;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.italic {
+    font-style: italic;
+}
+
+.underline {
+    text-decoration: underline;
+}
+
+
+
+
+
+
+
+
+.outer {
+    padding: 2px;
+    border: 1px dashed #dda875;
+}
+
+.head {
+    background-color: #F17E2D;
+    padding: 5px;
+    color: #fff;
+    font-weight: normal;
+}
+
+.head a {
+    color: #fff;
+}
+
+.even {
+    background-color: inherit;
+    padding: 5px;
+}
+
+.odd {
+    background-color: inherit;
+    padding: 5px;
+}
+
+.foot {
+    padding: 5px;
+    font-weight: bold;
+}
+
+tr.even td {
+    background-color: inherit;
+    padding: 5px;
+}
+
+tr.odd td {
+    background-color: inherit;
+    padding: 5px;
+}
+
+/* --------- Core messages --------- */
+.errorMsg {
+    background-color: #FFCCCC;
+    padding: 10px;
+    text-align: center;
+    border-top: 1px solid #DDDDFF;
+    border-left: 1px solid #DDDDFF;
+    border-right: 1px solid #aaa;
+    border-bottom: 1px solid #aaa;
+    font-weight: bold;
+}
+
+.confirmMsg {
+    background-color: #DDFFDF;
+    padding: 10px;
+    color: #136C99;
+    text-align: center;
+    font-weight: bold;
+    border-top: 1px solid #DDDDFF;
+    border-left: 1px solid #DDDDFF;
+    border-right: 1px solid #aaa;
+    border-bottom: 1px solid #aaa;
+}
+
+.resultMsg {
+    background-color: #c1c1c1;
+    padding: 10px;
+    color: #333;
+    text-align: center;
+    font-weight: bold;
+    border-top: 1px solid #ccc;
+    border-left: 1px solid #ccc;
+    border-right: 1px solid #666;
+    border-bottom: 1px solid #666;
+}
+
+/* --------- Codes and Quotes --------- */
+.xoopsCode {
+    max-height: 200px;
+    margin: 6px;
+    background-color: #FFFFF0;
+    padding: 6px;
+    overflow: auto;
+    color: #666;
+    font-family: "Lucida Console", "courier new", monospace;
+    font-size: .9em;
+    border: 1px dashed #dda875;
+    border-left: 4px solid #F17327;
+}
+
+.xoopsQuote {
+    margin: 6px;
+    background-color: #FFFFF0;
+    padding: 6px;
+    font-style: italic;
+    border: 1px dashed #dda875;
+    border-left: 4px solid #F17327;
+}
+
+/* --------- Articles --------- */
+.item {
+    margin-bottom: 10px;
+}
+
+.itemHead {
+    padding: 8px 5px 0 10px;
+    color: #885835;
+    font-size: 1.1em;
+    font-weight: bold;
+    border-bottom: 1px dashed #dda875;
+}
+
+.itemInfo {
+    padding: 3px;
+    font-size: .8em;
+    text-align: right;
+}
+
+.itemTitle a {
+    color: #885835;
+    letter-spacing: 3px;
+    font-size: 1.1em;
+}
+
+.itemPoster {
+    font-size: .9em;
+    font-style: italic;
+}
+
+.itemPostDate {
+    font-size: .9em;
+    font-style: italic;
+}
+
+.itemStats {
+    font-size: .9em;
+    font-style: italic;
+}
+
+.itemBody {
+    padding-left: 5px;
+}
+
+.itemText {
+    margin-top: 5px;
+    margin-bottom: 5px;
+    padding: 0 10px 0 10px;
+    line-height: 1.5em;
+}
+
+.itemFoot {
+    padding: 3px;
+    text-align: right;
+}
+
+.itemAdminLink {
+    font-size: .9em;
+}
+
+.itemPermaLink {
+    font-size: .9em;
+}
+
+/* --------- Forums and Comments --------- */
+.comTitle {
+    margin-bottom: 2px;
+    font-weight: bold;
+}
+
+.comText {
+    padding: 2px;
+}
+
+.comUserStat {
+    margin: 2px;
+    background-color: #fff;
+    padding: 3px;
+    color: #555;
+    font-size: .75em;
+    font-weight: bold;
+    border: 1px dashed #dda875;
+}
+
+.comUserStatCaption {
+    font-weight: normal;
+}
+
+.comUserStatus {
+    margin-left: 2px;
+    margin-top: 10px;
+    color: #639ACC;
+    font-weight: bold;
+    font-size: .8em;
+}
+
+.comUserRank {
+    margin: 2px;
+}
+
+.comUserRankText {
+    font-size: .8em;
+    font-weight: bold;
+}
+
+.comUserRankImg {
+    border: 0;
+}
+
+.comUserName {
+}
+
+.comUserImg {
+    margin: 2px;
+}
+
+.comDate {
+    font-weight: normal;
+    font-style: italic;
+    font-size: .8em;
+}
+
+.comDateCaption {
+    font-weight: bold;
+    font-style: normal;
+    font-size: .8em;
+}
+
+.signature {
+    font-size: .8em;
+    font-style: italic;
+}
+
+/***************************************************/
+

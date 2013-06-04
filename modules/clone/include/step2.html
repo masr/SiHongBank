@@ -1,0 +1,89 @@
+<style>
+.button{
+border: 1px solid #000;
+width: 50px;
+margin: 0px 10px;
+padding: 1px 3px;
+}
+</style>
+<script language="javascript" src="../include/jquery-1.2.1.pack.js"></script>
+<script language="javascript" type="text/javascript">
+$(document).ready(
+	function() {
+		customNumber = 0;
+		$('#addRow').click(addRow);
+		function addRow() {
+			customNumber ++ ;
+			$("#replacement").html($("#replacement").html()
+				+ '<tr><td>自定义替换 ' 	+ customNumber 
+				+ '</td><td><label><input name="custom[' + customNumber 
+				+ '][source]" type="text" value="" size="16" maxlength="32"></label></td>'
+				+ '<td><input name="custom[' + customNumber 
+				+ '][target]" type="text" value="" size="16" maxlength="32"></td><td>&nbsp;</td></tr>'
+				);
+				$('#addRow').click(addRow);
+		};
+	}	
+	
+);
+</script>
+
+<form name="formStep3" method="get" action="step3.php">
+<table id="replacement" width="500" border="0" align="center" cellpadding="5" cellspacing="0">
+  <caption>
+    第二步 设置替换字符串
+		<div class="error"><?php echo $message; ?></div>
+  </caption>	
+  <thead>
+    <td>&nbsp;</td>
+    <td>来源</td>
+    <td>目标</td>
+    <td>&nbsp;</td>
+  </thead>
+  <tr>>
+  	<th colspan="3">基本替换</th>
+  </tr>
+<?php foreach ($clone['basic'] as $key => $value) { 
+//	echo __FILE__.__LINE__;debugPrint($value);
+	?>
+  <tr>
+    <td><?php echo $cloneItem[$key]; ?></td>
+    <td><input name="basic[<?php echo $key; ?>][source]" type="text" value="<?php echo $value['source']; ?>" size="16" maxlength="32"></td>
+    <td><input name="basic[<?php echo $key; ?>][target]" type="text" value="<?php echo $value['target']; ?>" size="16" maxlength="32"></td>
+    <td>&nbsp;</td>
+  </tr>	
+<?php } ?>
+	<tr>
+		<th colspan="3">自定义替换</th>
+	</tr>
+	<tr>
+		<td><span id="addRow" class="button" align="center"><a href="#"><img src="../images/add5.jpg" width="11" height="11" /> 添加</a></span></td>
+		<td colspan="2">当采用基本替换后，新模块安装或运行出错时，使用自定义替换修改冲突的类或函数名。</td>
+		<td>&nbsp;</td>
+	</tr>
+<!--
+	 <tr>
+		<th colspan="3">二次替换</th>
+	</tr>
+	<tr>
+		<td><span id="addRow" class="button" align="center"><a href="#"><img src="../images/add5.jpg" width="11" height="11" /> 添加</a></span></td>
+		<td colspan="2">以上的替换是平行的，不会出现已替换内容再次被替换的现象。如果需要对已替换的内容进行再次替换，可以采用二次替换。<br>
+		例如可以使用反向替换的技巧，如源模块中有cloneFile，第一次进行了clone -> cl 的替换，cloneFile 变成了 clFile, 在二次替换中设置 clFile -> cloneFile，这样可以恢复clone。<br>
+		[ * 这个例子好像没有必要，可以先cloneFile->cloneFile，再clone->cl]
+		</td>
+		<td>&nbsp;</td>
+	</tr>
+-->
+</table>
+<table width="500" border="0" align="center" cellpadding="5" cellspacing="0">
+  <tr>
+    <td colspan="4">
+      <div align="center">
+				<input name="last" type="button" id="last" value="上一步" onclick="history.go(-1)">
+				<input name="next" type="submit" id="next" value="下一步">
+      </div>
+		</td>
+  </tr>
+ 
+</table>
+</form>

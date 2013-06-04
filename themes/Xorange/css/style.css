@@ -1,0 +1,29 @@
+@CHARSET "UTF-8";
+@import "global.css";
+@import "layout.css";
+@import "xoops_style.css";
+@import "xoops_block.css";
+
+
+
+
+/* ---------  Show class --------- */
+.clear {
+    clear: both;
+    height: 0;
+    line-height: 0;
+    font-size: 0;
+}
+
+
+.clear_float:after{
+content : ".";
+display:block;
+height:0;
+clear:both;
+visibility:hidden;
+}             
+*html .clear_float{
+height:1%;          
+}               
+*:first-child+html .clear_float{min-height:1px;}  

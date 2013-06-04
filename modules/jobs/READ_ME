@@ -1,0 +1,54 @@
+INSTALL DIRECTIONS
+
+BACKUP YOUR DATABASE BEFORE ANY MAJOR UPGRADE. DON'T SAY YOU WEREN'T WARNED.
+
+the 2 folders logo_images and resumes need to be chmod 777,
+the module will check those folders and if not right you will be notified in the admin area.
+
+1) NEW INSTALL
+
+   Upload the jobs folder inside the Xoops modules folder, go to modules administration and install.
+
+
+2) UPGRADING VERSION 1.X
+
+  BACKUP YOUR DATABASE BEFORE THIS UPGRADE. DON'T SAY YOU WEREN'T WARNED.
+  The databse will be modified to add new tables and one field.
+
+  Simple 2 click upgrade. Don't know why all modules don't upgrade like this.
+
+  YOU MUST FOLLOW THESE DIRECTIONS.
+
+  1. delete all files and folders EXCEPT THE logo_images FOLDER and the resumes FOLDER if it exists. (if there are no files in it you can delete it also).
+  2. Overwrite the jobs folder with the new files.
+  3. Go to the jobs administration in the modules admin.
+  4. You will see "You are using version XXX UPGRADE TO Version 2.0, click it, it will update the database(adding new          tables and fields).
+  5. When done it will say update module, click that and you are done 
+
+The reason I want you to follow these steps is that there are some files that were removed, and there was one file that should not have been in the earlier releases, possible security problem. If you follow these directions you will be fine.
+
+3) UPGRADING VERSION 2.x
+
+  BACKUP YOUR DATABASE BEFORE THIS OR ANY OTHER UPGRADE. DON'T SAY YOU WEREN'T WARNED.
+
+  1. Just overwrite the files and update the module in the modules administation.
+
+4) UPGRADING VERSION 2.x to 2.42
+
+  1. You will need to go into your database using phpmyadmin or equivilent, go to the table 'jobs_listing' and change the field name 'description' to 'desctext' 
+  2. Overwrite the Jobs module and update the module in the modules administation.
+
+
+
+IMPORTANT!!!  You must create a category in resumes before trying to set permissions for resumes, or you will get an error.
+
+
+
+
+Donations will allow this software to continue, without them who knows.
+
+Report any problems at www.jlmzone.com
+
+Thanks and enjoy.
+
+John

@@ -1,0 +1,7 @@
+<?php
+global $xoopsTpl;
+
+   $btitle=array('贷款业务'=>'dkyw',"网站公告"=>'wzgg',"文章"=>'wz',"企业风采"=>"qyfc","新闻动态"=>"xwdt","投票"=>"tp","搜索"=>"ss","会员菜单"=>"hycd","会员登陆"=>"hydl");
+
+$xoopsTpl->assign("btitle",$btitle);
+?>
